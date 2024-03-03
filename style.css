@@ -14,7 +14,7 @@ header{
 }
 
 .navbar.scrolling-active {
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.5);
     padding: 13px 51px 13px 10px;
 
 }
@@ -28,10 +28,11 @@ header{
     color: whitesmoke;
     display: flex;
     transition: all .2s ease-in-out;
+    z-index: 99;
 }
 
 .span {
-    font-weight: 500;
+    font-weight: lighter;
 }
 
 .list ul{
@@ -53,24 +54,21 @@ header{
     display: flex;
     align-items: center;
     padding-left: 250px;
+    gap: 10px;
 }
 .log a{
     text-decoration: none;
     color: whitesmoke;
-}
-
-.sig {
-    border: 2px solid blue;
+    padding: 5px px;
+    border: 2px solid white;
     padding: 5px ;
     border-radius: 10px;
+    transition: .5s;
 }
 
-.login{
-    background-color: blue;
-    border: 2px solid blue;
-    padding: 5px 15px;
-    border-radius: 10px;
-    margin-left: 15px;
+.log a:hover {
+    background-color: white;
+    color: black;
 }
 
 /* Navbar End */
@@ -88,8 +86,212 @@ header{
 
 
 /* Brand */
+.judul {
+    font-family:'Poppins', sans-serif;
+    margin: 50px 25px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .brand{
-    height: 100vh;
+    margin-top: 15px;
+    max-height: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.brand .item{
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+}
+
+.brand .item img{
+    border-radius: 20px;
+    width: 110px;
 }
 /* Brand End */
+
+/* Product */
+.product {
+    display: flex;
+    justify-content: center;
+    margin: 10px 50px;
+
+    gap: 40px
+    ;
+}
+
+.product .items{
+    border: 1px solid rgb(229, 207, 207);
+    border-radius: 10px;
+}
+
+.product .items  p{
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.product .items img{
+    max-width: 370px;
+    border-radius: 10px 10px 0 0
+}
+
+.product .items .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product .items .text img{
+    width: 150px;
+    height: 50px;
+}
+
+.items {
+    transition: .5s;
+}
+
+.items:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Product end */
+
+/* Menu */
+.menu-items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    row-gap: 50px;
+}
+
+.item {
+    transition: .5s;
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+.menu-items .item span{
+    font-weight: 200;
+    font-size: 14.5px ;
+}
+
+.menu-items .item{
+    border: .5px solid rgba(229, 207, 207);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.menu-items .item img{
+    width: 230px;
+    border-radius: 10px;
+}
+
+/* Menu end */
+
+/* Alasan */
+.texts{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.texts .teks p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.texts .teks {
+    max-width: 350px;
+    margin-bottom: 50px;
+}
+
+.teks i{
+    color: rgb(46, 197, 46);
+    padding-right: 4.5px;
+}
+/* Alasan end */
+
+/* Ulasan */
+.ulasan{
+    background-color: rgb(242, 248, 248);
+    padding-top: 5px;
+}
+
+.ulasan-text{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 27px;
+    margin-bottom: 50px;
+}
+.paraf{
+    margin: 0 15px;
+    margin-left: 25px;
+}
+
+.ulasan-text h1{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* Ulasan end */
+
+/* Footer */
+.footer{
+    padding: 26px;
+    padding-top: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.kiri p{
+    padding: 8px;
+}
+.kiri span{
+    font-weight: 200;
+}
+
+.kanan-atas{
+    text-align: right;
+}
+
+.kanan-atas a i {
+    color: whitesmoke   ;
+    font-size: 38px ;
+    margin-right: 15px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.kanan-atas img{
+    width: 150px;
+    margin-right: 10px;
+}
+
+/* Footer end */
+
+
+
+.judul a {
+    text-decoration: none;
+    color: black;
+}
 
